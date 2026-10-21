@@ -35,7 +35,7 @@ if st.button("✨ Generate Winning Proposal", use_container_width=True):
         with st.spinner("Analyzing job post and crafting your winning proposal..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-2.5-flash')
+                model = genai.GenerativeModel('gemini-3.8-flash')
                 
                 prompt = f"""
                 You are an Elite Freelance Proposal Strategist. 
